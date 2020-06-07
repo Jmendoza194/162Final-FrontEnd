@@ -22,7 +22,7 @@ class ChatBox extends React.Component{
       inputChange(e){
           this.setState({answer: e.target.value})
       }
-      
+    
     componentDidMount(){
         this.props.client.on('message', message =>{
             console.log('Hello')
