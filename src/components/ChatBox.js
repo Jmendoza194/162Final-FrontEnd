@@ -1,7 +1,6 @@
 import React from 'react';
 import Messages from './Messages';
 
-
 class ChatBox extends React.Component{
     constructor(props){
         super(props);
@@ -11,12 +10,17 @@ class ChatBox extends React.Component{
             message: []
         })
 
+       
+
     }
 
     submitForm(e){
         e.preventDefault()
         console.log('submit!')
         this.props.client.emit('sendMessage',this.state.answer)
+        this.setState({
+            answer:''
+        })
       }
     
       inputChange(e){

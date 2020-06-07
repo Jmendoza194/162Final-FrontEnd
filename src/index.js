@@ -10,7 +10,8 @@ import { Route, BrowserRouter as Router} from 'react-router-dom';
 const routing = 
     <Router>
         <Route exact path='/' component={SignInForm}/>
-        <Route path='/Home' component = {App}/>
+        <Route path='/redirect' component = {App}/>
+
     </Router>
 
 ReactDOM.render(
