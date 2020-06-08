@@ -1,4 +1,5 @@
-import '../styles/style_Playlist.css'
+import '../styles/style_Playlist.css';
+import Invite from './Invite'
 
 const React = require("react");
 
@@ -11,13 +12,7 @@ const Playlist = function() {
             <textarea id="msg" placeholder="Squad Playlist"></textarea>
           </div>
 
-          <button id="pen">
-            <i class="fas fa-pen"></i>
-          </button>
-
-          <button id="invite">
-            <p id = "invtext">Invite</p>
-          </button>
+          <Invite></Invite>
         </div>
 
         <button id="plus">

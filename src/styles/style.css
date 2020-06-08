@@ -79,10 +79,15 @@ h1 {
   padding-right: .75rem;
   margin-top: .75rem;
   margin-bottom: .75rem;
+  color: white;
   
 }
 
+#invite2{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
+}
 
 p {
   margin-top: 20px;

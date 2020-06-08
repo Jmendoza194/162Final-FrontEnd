@@ -183,7 +183,7 @@ class App extends React.Component{
             <InviteOverlay link={inviteLink}/>
     
             <Search/>
-            <Overlay search={this.findSongs.bind(this)} />
+            <Overlay search={this.findSongs.bind(this)} searchInfo={this.state.searchInfo}/>
           </div>
     
           <div id="playing">
@@ -201,7 +201,8 @@ class App extends React.Component{
             <div id="song"></div>
     
             <ChatPopUp></ChatPopUp>
-            <ChatBox1></ChatBox1>
+            {/* <ChatBox1></ChatBox1> */}
+            <Chatbox client={this.state.client} userName={this.state.userName}/>
           </div>
         </div>
           )

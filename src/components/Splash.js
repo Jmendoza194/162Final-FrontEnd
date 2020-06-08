@@ -1,3 +1,4 @@
+import '../styles/style.css'
 import SignInForm from './SignInForm';
 import '../styles/style.css';
 
@@ -17,10 +18,8 @@ const Splash = function() {
 
       <p id='msg'>Sit back, relax, and let your friends queue the music!</p>
 
-      {/* <button id='spotifylogin'>
-        <p id='block'>Login with Spotify</p>
-      </button> */}
-      <SignInForm />
+
+      <SignInForm></SignInForm>
 
     </div>
     </div>

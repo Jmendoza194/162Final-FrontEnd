@@ -269,6 +269,7 @@ textarea {
 #invite1{
   padding-top: 1rem;
   padding-left: 1rem;
+
 }
 
 #leave {
@@ -307,6 +308,7 @@ textarea {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border-color: #1db954;
 }
 
 #inv_x {
@@ -349,10 +351,7 @@ textarea {
 }
 
 #bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 3rem; 
+
 }
 
 #search_box::placeholder {
@@ -361,4 +360,19 @@ textarea {
 
 #search_button:hover {
   cursor: pointer;
+}
+
+#searchbox{
+  padding-left: 2rem;
+
+}
+
+#form{
+  display: flex;
+  border-radius: 1rem;
+}
+
+#input{
+  padding-right: 7rem;
+
 }

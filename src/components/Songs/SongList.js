@@ -4,8 +4,7 @@ const SongList = (props) => {
 
     
     const renderList = props.searchInfo.map((data) =>{
-        console.log(data)
-        console.log(data.name)
+        console.log('Hello')
         
         return <SongCard artist={data.artists[0].name} song={data.name} spotifyURI={data.uri}/>
     })
