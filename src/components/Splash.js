@@ -1,6 +1,7 @@
-const React = require('react');
 import '../styles/style.css'
-import '../styles/style_playlist'
+import SignInForm from './SignInForm';
+
+const React = require('react');
 
 const Splash = function() {
   return (
@@ -15,13 +16,12 @@ const Splash = function() {
 
       <p id='msg'>Sit back, relax, and let your friends queue the music!</p>
 
-      <button id='spotifylogin'>
-        <p id='block'>Login with Spotify</p>
-      </button>
+
+      <SignInForm></SignInForm>
 
     </div>
     </div>
   );
 }
 
-export default Playlist
+export default Splash;
