@@ -7,17 +7,12 @@ import SongList from './Songs/SongList'
 import InviteButton from './InviteComponent/InviteButton';
 import { Redirect } from 'react-router-dom';
 import '../styles/style_Playlist.css'
-<<<<<<< HEAD
 import ChatPopUp from "./ChatPopUp";
 import ChatBox1 from "./ChatBox1";
 import Search from "./Search";
 import Overlay from "./Overlay";
 import Invite from "./Invite";
 import InviteOverlay from "./InviteOverlay";
-=======
-import '../styles/style.css'
-
->>>>>>> 8cb9b66f5bfb9cee697258f1c9d3deca552e7436
 
 const socketIOClient = require( "socket.io-client");
 
@@ -162,114 +157,56 @@ class App extends React.Component{
        
       }
 
-    render(){
+      render(){
       
-    return(
-<<<<<<< HEAD
-      //<div>
-        //{/* <button onClick={this.findSongs}>Search</button> */}
-       // <SongList searchInfo={this.state.searchInfo}/>
-       // <SearchBar search={this.findSongs.bind(this)}/>
-      //  <InviteButton link={inviteLink}/>
-      //  <Chatbox client={this.state.client} userName={this.state.userName}/>
-     // </div> 
-     <div>
-      <div id="background-color">
-        <div id="container">
-          <div id="toptext">
-            <textarea id="msg2" placeholder="Squad Playlist"></textarea>
-            <button id="pen">
-              <i class="fas fa-pen"></i>
-            </button>
+        return(
+          //<div>
+            //{/* <button onClick={this.findSongs}>Search</button> */}
+           // <SongList searchInfo={this.state.searchInfo}/>
+           // <SearchBar search={this.findSongs.bind(this)}/>
+          //  <InviteButton link={inviteLink}/>
+          //  <Chatbox client={this.state.client} userName={this.state.userName}/>
+         // </div> 
+         <div>
+          <div id="background-color">
+            <div id="container">
+              <div id="toptext">
+                <textarea id="msg2" placeholder="Squad Playlist"></textarea>
+                <button id="pen">
+                  <i class="fas fa-pen"></i>
+                </button>
+              </div>
+              
+               <Invite/> 
+            </div>
+            
+            <InviteOverlay link={inviteLink}/>
+    
+            <Search/>
+            <Overlay search={this.findSongs.bind(this)} searchInfo={this.state.searchInfo}/>
           </div>
-
-          <Invite></Invite>
-        </div>
-        
-        <InviteOverlay></InviteOverlay>
-
-        <Search></Search>
-        <Overlay></Overlay>
-      </div>
-
-      <div id="playing">
-        <div id="cmv">
-          <p id="current"> Currently Playing: </p>
-          <div id="control">
-            <button id="mute">
-              <i class="fas fa-volume-mute"></i>
-            </button>
-            <button id="volup">
-              <i class="fas fa-volume-up"></i>
-            </button>
+    
+          <div id="playing">
+            <div id="cmv">
+              <p id="current"> Currently Playing: </p>
+              <div id="control">
+                <button id="mute">
+                  <i class="fas fa-volume-mute"></i>
+                </button>
+                <button id="volup">
+                  <i class="fas fa-volume-up"></i>
+                </button>
+              </div>
+            </div>
+            <div id="song"></div>
+    
+            <ChatPopUp></ChatPopUp>
+            {/* <ChatBox1></ChatBox1> */}
+            <Chatbox client={this.state.client} userName={this.state.userName}/>
           </div>
         </div>
-        <div id="song"></div>
-
-        <ChatPopUp></ChatPopUp>
-        <ChatBox1></ChatBox1>
-=======
-
-      <div>
-        {/* <button onClick={this.findSongs}>Search</button> */}
-        <div>
-      <div id="background-color">
-        <div id="container">
-          <div id="toptext">
-            <textarea id="msg" placeholder="Squad Playlist"></textarea>
-          </div>
-
-          <button id="pen">
-            <i class="fas fa-pen"></i>
-          </button>
-
-          {/* <button id="invite">
-            <p>Invite</p>
-          </button> */}
-          <InviteButton link={inviteLink}/>
-        </div>
-
-        <button id="plus">
-          <i class="fas fa-plus"></i>
-        </button>
-
-        <button id="location">
-          <i class="fas fa-location-arrow"></i>
-        </button>
-      </div>
-
-      <div id="playing">
-        <p id="current"> Currently Playing: </p>
-
-        <button id="mute">
-          <i class="fas fa-volume-mute"></i>
-        </button>
-        <button id="volup">
-          <i class="fas fa-volume-up"></i>
-        </button>
-        <div id='song'>
-          
-        </div>
-         <button id="chatbubble">
-          <i class="fas fa-comment-alt"></i>
-        </button>
-      </div>
-      
-      <div>
-        <p id="chat">Chat</p>
-      </div>
-      
-    </div>
-
-        <SongList searchInfo={this.state.searchInfo}/>
-        <SearchBar search={this.findSongs.bind(this)}/>
-        <Chatbox client={this.state.client} userName={this.state.userName}/>
-        
->>>>>>> 8cb9b66f5bfb9cee697258f1c9d3deca552e7436
-      </div>
-    </div>
-      )
-    }
+          )
+        }
     
   }
   

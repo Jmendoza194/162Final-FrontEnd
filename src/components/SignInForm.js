@@ -69,7 +69,6 @@ class SignInForm extends React.Component{
                 <Link to={`/Home?username=${this.state.username}&room=${this.state.room}&host=False`}><button>Join</button></Link>
             </form> */}
             
-<<<<<<< HEAD
               
                 <button id='spotifylogin'>
                     <a
@@ -79,15 +78,6 @@ class SignInForm extends React.Component{
                     <p id='block'>Login with Spotify</p>
                     </a>
                 </button>
-=======
-                <a
-                id='block'
-                href={`${this.state.authEndpoint}client_id=${this.state.clientID}&redirect_uri=${this.state.redirectURI}&scope=${this.state.scopes.join("%20")}&response_type=token&show_dialog=true`}
-                >
-                Login to Spotify
-                </a>
-          
->>>>>>> 8cb9b66f5bfb9cee697258f1c9d3deca552e7436
         
         </div>
         
