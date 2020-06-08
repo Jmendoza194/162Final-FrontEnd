@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import '../styles/style_Playlist.css';
 
 const React = require("react");
@@ -11,6 +12,11 @@ const InviteOverlay = require("./InviteOverlay");
 //const Invite = require("./Invite")
 //const PlaylistName = require("./PlaylistName");
 
+=======
+import React from 'react';
+import InviteButton from '../components/InviteComponent/InviteButton';
+import '../styles/style_Playlist.css'
+>>>>>>> 8cb9b66f5bfb9cee697258f1c9d3deca552e7436
 const Playlist = function() {
   return (
     <div>
@@ -23,7 +29,18 @@ const Playlist = function() {
             </button>
           </div>
 
+<<<<<<< HEAD
           <Invite></Invite>
+=======
+          <button id="pen">
+            <i class="fas fa-pen"></i>
+          </button>
+
+          {/* <button id="invite">
+            <p>Invite</p>
+          </button> */}
+          <InviteButton />
+>>>>>>> 8cb9b66f5bfb9cee697258f1c9d3deca552e7436
         </div>
         
         <InviteOverlay></InviteOverlay>
