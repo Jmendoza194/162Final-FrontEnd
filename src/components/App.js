@@ -6,7 +6,8 @@ import SearchBar from './SearchBar'
 import SongList from './Songs/SongList'
 import InviteButton from './InviteComponent/InviteButton';
 import { Redirect } from 'react-router-dom';
-import '../styles/style_Playlist.css'
+import '../styles/style_Playlist.css';
+import '../styles/reset.css';
 import ChatPopUp from "./ChatPopUp";
 import ChatBox1 from "./ChatBox1";
 import Search from "./Search";

@@ -17,11 +17,10 @@ class Overlay extends React.Component {
                 <i class="fas fa-plus"></i>
               </div>
             </div>
-            <div id="bar">
+            <div id="bar1">
               {/* <textarea id="search_box" placeholder="Search by title, artist, or album"></textarea> */}
               <SearchBar search={this.props.search}/>
               <SongList searchInfo={this.props.searchInfo}/>
-              <div id="search_button">Search</div>
             </div>
           </div>
         </div>
