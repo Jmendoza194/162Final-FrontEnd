@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/chat_styles.css'
 
 class ChatPopUp extends React.Component {
   render() {

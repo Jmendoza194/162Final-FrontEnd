@@ -66,3 +66,12 @@
     color: white;
     border-radius: 3rem;
 }
+
+#plus{
+    margin-left: 5rem!important;
+}
+
+#chatbubble{
+    margin-right: 5rem!important;
+    margin-bottom: 5rem!important;
+}
