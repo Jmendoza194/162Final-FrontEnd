@@ -3,6 +3,8 @@
 
 * {
   box-sizing: border-box;
+  margin:0!important;
+  padding:0;
 }
 
 body {
@@ -362,6 +364,7 @@ textarea {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 #searchbox{
   padding-left: 2rem;
 
@@ -376,3 +379,71 @@ textarea {
   padding-right: 7rem;
 
 }
+=======
+#song1 {
+  color: black;
+  padding-left: 1rem;
+}
+
+#artist {
+  color: black;
+  padding-left: 1rem;
+}
+
+#addsong {
+  padding-left: 1rem;
+  background-color: #1db954;
+  color: white;
+  border-radius: .5rem;
+  display: flex;
+  justify-content: center;
+  height: 1.5rem;
+  width: 3rem;
+}
+
+#addsong:hover {
+  cursor: pointer;
+}
+
+#songlist {
+  display: flex;
+  flex-direction: column;
+
+}
+
+#info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+  padding-left: 1rem;
+  border-top: 1px solid #b3b3b3;
+  margin-right: 3rem;
+  margin-left: 3rem;
+  padding-top: 1rem;
+}
+
+#sad {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+#songname {
+  padding-right: 15rem;
+}
+
+#artistname {
+  padding-right: 15rem;
+}
+
+#albumname {
+  padding-right: 10rem;
+}
+>>>>>>> 0187ec7038919ade575d818da06810bbeaab1728

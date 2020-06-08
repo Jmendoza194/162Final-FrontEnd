@@ -4,10 +4,16 @@ const SongCard = (props) =>{
     console.log(props.song)
     return (
         <div>
+        <div id="songlist">
         {/* Color is white, need to properly fix with positioning */}
-            <h1>{props.song}</h1>
-            <h1>{props.artist}</h1>
-           <button>Play</button>
+        
+        <div id="info">
+            <div id="song1">{props.song}</div>
+            <div id="artist">{props.artist}</div>
+            <div id="album">{props.album}</div>
+           <div id="addsong"><p>Add</p></div>
+           </div>
+        </div>
         </div>
     )
 }

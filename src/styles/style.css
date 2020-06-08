@@ -6,8 +6,7 @@
 }
 
 body {
-  font-family: sans-serif;
-  margin: 2em 1em;
+  font-family: Open Sans;
   line-height: 1.5em;
   background: #000;
 }
@@ -16,7 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  min-height: 50rem;
 }
 
 .centered {
@@ -62,7 +61,7 @@ h1 {
   align-items: center;
   justify-content: center;
   font-size: 2rem;
-  padding-top: 1rem;
+  padding-top: 3rem;
 }
 
 #spotifylogin{
@@ -72,6 +71,7 @@ h1 {
   border-radius: .5rem;
   width: 10rem;
   height: 5%;
+<<<<<<< HEAD
 }
 
 #block{
@@ -128,10 +128,15 @@ p {
 }
 
 .game {
+=======
+  padding-top: 2rem;
+>>>>>>> 0187ec7038919ade575d818da06810bbeaab1728
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.game-info {
-  margin-left: 20px;
+#back {
+  padding-top: 2rem;
+  min-height: 50rem;
 }

@@ -8,9 +8,9 @@ const React = require('react');
 const Splash = function() {
   return (
    <div id="back">
-    {/* <div id='login'>
+    <div id='login'>
         Login
-      </div> */}
+      </div> 
     
     <div id='body1'>
       
