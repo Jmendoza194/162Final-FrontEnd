@@ -1,3 +1,5 @@
+import './style_Playlist'
+
 const React = require("react");
 
 const Playlist = function() {
@@ -52,4 +54,4 @@ const Playlist = function() {
   );
 };
 
-module.exports = Playlist;
+export default Playlist;
