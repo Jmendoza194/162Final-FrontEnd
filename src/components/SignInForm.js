@@ -68,13 +68,15 @@ class SignInForm extends React.Component{
                 <Link to={`/Home?username=${this.state.username}&room=${this.state.room}&host=False`}><button>Join</button></Link>
             </form> */}
             
-                <a
-                id='block'
-                href={`${this.state.authEndpoint}client_id=${this.state.clientID}&redirect_uri=${this.state.redirectURI}&scope=${this.state.scopes.join("%20")}&response_type=token&show_dialog=true`}
-                >
-                Login to Spotify
-                </a>
-          
+              
+                <button id='spotifylogin'>
+                    <a
+                    className="btn btn--loginApp-link"
+                    href={`${this.state.authEndpoint}client_id=${this.state.clientID}&redirect_uri=${this.state.redirectURI}&scope=${this.state.scopes.join("%20")}&response_type=token&show_dialog=true`}
+                    >
+                    <p id='block'>Login with Spotify</p>
+                    </a>
+                </button>
         
         </div>
         

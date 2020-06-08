@@ -1,14 +1,8 @@
-<<<<<<< HEAD
-
+import SignInForm from './SignInForm';
 import '../styles/style.css';
 
 
 const React = require('react');
-=======
-import React from 'react';
-import SignInForm from '../components/SignInForm'
-import '../styles/style.css'
->>>>>>> 8cb9b66f5bfb9cee697258f1c9d3deca552e7436
 
 const Splash = function() {
   return (

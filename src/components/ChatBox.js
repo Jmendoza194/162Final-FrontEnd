@@ -1,5 +1,6 @@
 import React from 'react';
 import Messages from './Messages';
+import '../styles/style_Playlist.css';
 
 class ChatBox extends React.Component{
     constructor(props){
@@ -39,12 +40,13 @@ class ChatBox extends React.Component{
     render(){
         
         return(
-            <div>
+            <div id="chat_cont">
                 <Messages messages={this.state.message}/>
                 <form onSubmit={(e) => this.submitForm(e)}>
                     <input value={this.state.answer} onChange={(e)=> this.inputChange(e)}></input>
                 </form>
             </div>
+            
         )
     }
 }

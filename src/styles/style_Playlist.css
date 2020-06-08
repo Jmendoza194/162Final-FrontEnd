@@ -37,7 +37,7 @@ textarea {
   flex-direction: row;
 }
 
-#msg{
+#msg2{
   background: black;
   color: white;
   border: none;
@@ -71,12 +71,10 @@ textarea {
 
 #invite:hover {
   cursor: pointer;
-
 }
 
 #invbutton{
   padding-right: 10rem;
-
 }
 
 .fa-pen{
