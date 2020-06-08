@@ -1,5 +1,5 @@
 const React = require("react");
-
+import '../styles/style_Playlist.css'
 const Playlist = function() {
   return (
     <div>
@@ -52,4 +52,4 @@ const Playlist = function() {
   );
 };
 
-module.exports = Playlist;
+export default Playlist;

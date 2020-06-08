@@ -1,4 +1,6 @@
 const React = require('react');
+import '../styles/style.css'
+import '../styles/style_playlist'
 
 const Splash = function() {
   return (
@@ -22,4 +24,4 @@ const Splash = function() {
   );
 }
 
-module.exports = Splash;
+export default Playlist
