@@ -1,3 +1,7 @@
+
+import '../styles/style.css';
+
+
 const React = require('react');
 
 const Splash = function() {
@@ -22,4 +26,4 @@ const Splash = function() {
   );
 }
 
-module.exports = Splash;
+export default Splash;

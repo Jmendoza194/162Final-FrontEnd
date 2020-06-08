@@ -1,4 +1,5 @@
-import './style_Playlist'
+
+import '../styles/style_Playlist.css'
 
 const React = require("react");
 
@@ -16,7 +17,7 @@ const Playlist = function() {
           </button>
 
           <button id="invite">
-            <p>Invite</p>
+            <p id = "invtext">Invite</p>
           </button>
         </div>
 

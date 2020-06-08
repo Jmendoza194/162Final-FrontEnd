@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-//import {backend} from '../apis/spotify';
 
 //console.log(process.env)
 
@@ -15,7 +14,7 @@ class SignInForm extends React.Component{
             room:'162',
             host:false,
             //Need to use own clientID and client Secret
-            clientID: '',
+            clientID: 'ef991f79ee6f4498b0563e592a734e8f',
             clientSecret:'',
             scopes:[
                 "user-read-currently-playing",

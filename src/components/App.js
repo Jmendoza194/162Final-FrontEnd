@@ -6,6 +6,7 @@ import SearchBar from './SearchBar'
 import SongList from './Songs/SongList'
 import InviteButton from './InviteComponent/InviteButton';
 import { Redirect } from 'react-router-dom';
+import '../styles/style_Playlist.css'
 
 
 const socketIOClient = require( "socket.io-client");
