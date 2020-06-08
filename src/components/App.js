@@ -158,55 +158,56 @@ class App extends React.Component{
        
       }
 
-    render(){
+      render(){
       
-    return(
-      //<div>
-        //{/* <button onClick={this.findSongs}>Search</button> */}
-       // <SongList searchInfo={this.state.searchInfo}/>
-       // <SearchBar search={this.findSongs.bind(this)}/>
-      //  <InviteButton link={inviteLink}/>
-      //  <Chatbox client={this.state.client} userName={this.state.userName}/>
-     // </div> 
-     <div>
-      <div id="background-color">
-        <div id="container">
-          <div id="toptext">
-            <textarea id="msg2" placeholder="Squad Playlist"></textarea>
-            <button id="pen">
-              <i class="fas fa-pen"></i>
-            </button>
+        return(
+          //<div>
+            //{/* <button onClick={this.findSongs}>Search</button> */}
+           // <SongList searchInfo={this.state.searchInfo}/>
+           // <SearchBar search={this.findSongs.bind(this)}/>
+          //  <InviteButton link={inviteLink}/>
+          //  <Chatbox client={this.state.client} userName={this.state.userName}/>
+         // </div> 
+         <div>
+          <div id="background-color">
+            <div id="container">
+              <div id="toptext">
+                <textarea id="msg2" placeholder="Squad Playlist"></textarea>
+                <button id="pen">
+                  <i class="fas fa-pen"></i>
+                </button>
+              </div>
+              
+               <Invite/> 
+            </div>
+            
+            <InviteOverlay link={inviteLink}/>
+    
+            <Search/>
+            <Overlay search={this.findSongs.bind(this)} searchInfo={this.state.searchInfo}/>
           </div>
-
-          <Invite></Invite>
-        </div>
-        
-        <InviteOverlay></InviteOverlay>
-
-        <Search></Search>
-        <Overlay></Overlay>
-      </div>
-
-      <div id="playing">
-        <div id="cmv">
-          <p id="current"> Currently Playing: </p>
-          <div id="control">
-            <button id="mute">
-              <i class="fas fa-volume-mute"></i>
-            </button>
-            <button id="volup">
-              <i class="fas fa-volume-up"></i>
-            </button>
+    
+          <div id="playing">
+            <div id="cmv">
+              <p id="current"> Currently Playing: </p>
+              <div id="control">
+                <button id="mute">
+                  <i class="fas fa-volume-mute"></i>
+                </button>
+                <button id="volup">
+                  <i class="fas fa-volume-up"></i>
+                </button>
+              </div>
+            </div>
+            <div id="song"></div>
+    
+            <ChatPopUp></ChatPopUp>
+            {/* <ChatBox1></ChatBox1> */}
+            <Chatbox client={this.state.client} userName={this.state.userName}/>
           </div>
         </div>
-        <div id="song"></div>
-
-        <ChatPopUp></ChatPopUp>
-        <ChatBox1></ChatBox1>
-      </div>
-    </div>
-      )
-    }
+          )
+        }
     
   }
   

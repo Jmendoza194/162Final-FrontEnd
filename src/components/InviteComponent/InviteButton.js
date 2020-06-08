@@ -26,7 +26,7 @@ class InviteButton extends React.Component{
     render(){
         return(
             <div>
-                <button onClick={this.handleClick}>Invite</button>
+                <button id="invbutton" onClick={this.handleClick}>Invite</button>
                 {
                    this.state.open ? <PopUp handleClick={this.handleClick} inviteLink={this.props.link}/> : null
                 }

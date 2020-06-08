@@ -40,12 +40,35 @@ class ChatBox extends React.Component{
     render(){
         
         return(
-            <div id="chat_cont">
-                <Messages messages={this.state.message}/>
-                <form onSubmit={(e) => this.submitForm(e)}>
-                    <input value={this.state.answer} onChange={(e)=> this.inputChange(e)}></input>
-                </form>
-            </div>
+            // <div id="chat_cont">
+            //     <Messages messages={this.state.message}/>
+            //     <form onSubmit={(e) => this.submitForm(e)}>
+            //         <input value={this.state.answer} onChange={(e)=> this.inputChange(e)}></input>
+            //     </form>
+            // </div>
+
+            // <div id="chat_cont">
+            //     <div id="chatbox">
+            //         <p id="chat">Chat</p>
+            //         <button id="exit" onClick={() => this.onClick()}>
+            //             <i class="fas fa-plus"></i>
+            //         </button>
+            //     </div>
+            //     <div>
+            //         <Messages messages={this.state.message}/>
+            //     </div>
+            // </div>
+
+             <div id="chat_cont">
+                <div>    
+                    <Messages messages={this.state.message}/>
+                    <form onSubmit={(e) => this.submitForm(e)}>
+                        <input value={this.state.answer} onChange={(e)=> this.inputChange(e)}></input>
+                    </form>
+                </div>
+
+                
+            </div> 
             
         )
     }
