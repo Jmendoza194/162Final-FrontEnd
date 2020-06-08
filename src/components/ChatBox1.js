@@ -20,7 +20,7 @@ class ChatBox1 extends React.Component {
   }
 
   onClick() {
-    document.getElementById("chat_cont").style.display = "none";
+    document.getElementById("chat_container").style.display = "none";
     document.getElementById("chatbubble").style.display = "";
     
   }

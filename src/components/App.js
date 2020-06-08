@@ -201,7 +201,6 @@ class App extends React.Component{
             <div id="song"></div>
     
             <ChatPopUp></ChatPopUp>
-            {/* <ChatBox1></ChatBox1> */}
             <Chatbox client={this.state.client} userName={this.state.userName}/>
           </div>
         </div>

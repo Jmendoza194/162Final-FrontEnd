@@ -1,12 +1,17 @@
 import React from 'react';
+import '../styles/chat_styles.css'
 
 const Messages = (props) =>{
     const renderList = props.messages.map((message)=>{
-        return <p>{message}</p>
+        return(
+            <div>
+                <p className='message_input'>{message}</p>
+            </div>
+        ) 
     })
 
     return(
-        <div>{renderList}</div>
+        <div className='message_container'>{renderList}</div>
     )
 }
 

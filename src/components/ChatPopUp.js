@@ -12,7 +12,7 @@ class ChatPopUp extends React.Component {
   }
 
   onClick() {
-    document.getElementById("chat_cont").style.display = "flex";
+    document.getElementById("chat_container").style.display = "flex";
     document.getElementById("chatbubble").style.display = "none";
   }
 }
