@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 
+=======
+import React from 'react';
+import InviteButton from '../components/InviteComponent/InviteButton';
+>>>>>>> 8cb9b66f5bfb9cee697258f1c9d3deca552e7436
 import '../styles/style_Playlist.css'
 
 const React = require("react");
@@ -16,9 +21,16 @@ const Playlist = function() {
             <i class="fas fa-pen"></i>
           </button>
 
+<<<<<<< HEAD
           <button id="invite">
             <p id = "invtext">Invite</p>
           </button>
+=======
+          {/* <button id="invite">
+            <p>Invite</p>
+          </button> */}
+          <InviteButton />
+>>>>>>> 8cb9b66f5bfb9cee697258f1c9d3deca552e7436
         </div>
 
         <button id="plus">

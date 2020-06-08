@@ -1,15 +1,21 @@
+<<<<<<< HEAD
 
 import '../styles/style.css';
 
 
 const React = require('react');
+=======
+import React from 'react';
+import SignInForm from '../components/SignInForm'
+import '../styles/style.css'
+>>>>>>> 8cb9b66f5bfb9cee697258f1c9d3deca552e7436
 
 const Splash = function() {
   return (
    <div id="back">
-    <div id='login'>
+    {/* <div id='login'>
         Login
-      </div>
+      </div> */}
     
     <div id='body1'>
       
@@ -17,9 +23,10 @@ const Splash = function() {
 
       <p id='msg'>Sit back, relax, and let your friends queue the music!</p>
 
-      <button id='spotifylogin'>
+      {/* <button id='spotifylogin'>
         <p id='block'>Login with Spotify</p>
-      </button>
+      </button> */}
+      <SignInForm />
 
     </div>
     </div>
