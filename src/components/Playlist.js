@@ -1,4 +1,5 @@
-const React = require("react");
+import React from 'react';
+import InviteButton from '../components/InviteComponent/InviteButton';
 import '../styles/style_Playlist.css'
 const Playlist = function() {
   return (
@@ -13,9 +14,10 @@ const Playlist = function() {
             <i class="fas fa-pen"></i>
           </button>
 
-          <button id="invite">
+          {/* <button id="invite">
             <p>Invite</p>
-          </button>
+          </button> */}
+          <InviteButton />
         </div>
 
         <button id="plus">

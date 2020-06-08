@@ -15,7 +15,7 @@ class SignInForm extends React.Component{
             room:'162',
             host:false,
             //Need to use own clientID and client Secret
-            clientID: '',
+            clientID: 'ef991f79ee6f4498b0563e592a734e8f',
             clientSecret:'',
             scopes:[
                 "user-read-currently-playing",
@@ -58,7 +58,7 @@ class SignInForm extends React.Component{
     
     render(){
     return(
-        <div>
+        <div id='spotifylogin'>
             {/* <form>
                 <label>Username</label>
                 <input placeholder='Username' name='username' value={this.state.username} onChange={this.handleChange} type='text' required/>
@@ -70,7 +70,7 @@ class SignInForm extends React.Component{
             </form> */}
             
                 <a
-                className="btn btn--loginApp-link"
+                id='block'
                 href={`${this.state.authEndpoint}client_id=${this.state.clientID}&redirect_uri=${this.state.redirectURI}&scope=${this.state.scopes.join("%20")}&response_type=token&show_dialog=true`}
                 >
                 Login to Spotify
